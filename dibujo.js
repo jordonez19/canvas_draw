@@ -7,6 +7,7 @@ var d = document.getElementById("dibujito");
 var ancho = d.width;
 var lienzo = d.getContext("2d");
 
+
 /* FUNCIONES */
 
 function dibujarLinea(color, xinicial, yinicial, xfinal, yfinal)
@@ -41,12 +42,12 @@ yi = espacio * l;
 xf= espacio * (l + 1);
 
     dibujarLinea(colorOrange, 0, yi, xf, 299);
-                dibujarLinea(colorPink, 299, yi, xf, 0);
+    dibujarLinea(colorPink, 299, yi, xf, 0);
 
 }
     dibujarLinea(colorOrange,1,1,1,299 );
-    dibujarLinea(colorOrange,1,299,299,299 );
+    dibujarLinea(colorOrange,299,299,299,1 );
 
-                dibujarLinea(colorPink,299, 299, 299, 1 );
-                dibujarLinea(colorPink,299, 1, 1, 1 );
+    dibujarLinea(colorPink,299, 299, 299, 1 );
+    dibujarLinea(colorPink, 1, 1, 1, 299 );
 } 
