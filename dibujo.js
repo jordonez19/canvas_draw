@@ -29,7 +29,7 @@ function dibujoPorClick()
     var yi, xf;
     var yin, xfn;
     var colorOrange = "orange";
-    var colorPink = "brown";
+    var colorBrown = "brown";
     var espacio = ancho/lineas;
 
 
@@ -42,12 +42,10 @@ yi = espacio * l;
 xf= espacio * (l + 1);
 
     dibujarLinea(colorOrange, 0, yi, xf, 299);
-    dibujarLinea(colorPink, 299, yi, xf, 0);
-
-}
+    dibujarLinea(colorBrown, 299, yi, xf, 0);
     dibujarLinea(colorOrange,1,1,1,299 );
-    dibujarLinea(colorOrange,299,299,299,1 );
+    dibujarLinea(colorBrown,299,299,299,1 );
+}
+    
 
-    dibujarLinea(colorPink,299, 299, 299, 1 );
-    dibujarLinea(colorPink, 1, 1, 1, 299 );
 } 
